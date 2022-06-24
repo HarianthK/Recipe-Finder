@@ -1,0 +1,57 @@
+body{
+    padding:20px;
+}
+.box1{
+    padding: 20px;
+    background-color: lightskyblue;
+    margin: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap : wrap;
+    padding: 20px;
+}
+.spacer{
+    margin-left: auto;
+}
+.recipeCard
+{
+    display : flex;
+    width: 40%;
+    background-color: #777;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 10px 5px 30px 5px #999;
+    border-radius: 7px;
+    color: #000;
+}
+.recipeCard > img{
+    width: 30%;
+    height: 150px;
+}
+.recipeContent{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.recipeContent h2{
+    text-align: center;
+    text-decoration: underline;
+}
+.recipeContent > a{
+    color: #fff;
+    text-align: center;
+}
+@media only screen and (max-width: 1000px){
+    .container{
+        flex-direction: column;
+    }
+    .spacer{
+        margin: 0px;
+    }
+    .recipeCard{
+        width: 90%;
+    }
+}
